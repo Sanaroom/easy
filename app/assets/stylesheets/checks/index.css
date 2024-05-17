@@ -8,13 +8,24 @@
   position: relative;
 }
 
-.messages{
+.form{
   position: absolute;
   left: 200px;
   height: 500px;
   width: 500px;
   text-align:center;
- 
+  
+}
+
+.number-box{
+  font-size: 50px;
+}
+
+.comment{
+  position: absolute;
+  right:200px;
+  font-size: 50px;
+  background-color: orange;
 }
 
 .good-morning{
@@ -26,4 +37,8 @@
 .check-content{
   font-size: 40px;
   text-align:center;
+}
+
+.sell-btn{
+  font-size: 30px;
 }

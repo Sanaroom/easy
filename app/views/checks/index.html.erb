@@ -1,13 +1,31 @@
 <%= render "shared/header" %>
 
 <div class='main'>
-  <div class='messages'>
-    <h1 class='good-morning'>
-    おはよう！
-    <h2 class='check-content'>
-    〇番さんは、<br>
-    学校に来たよ！
-    </div>
+  <%# 欠席フォーム %>
+  <div class='form'>
+    <%= form_with model:@check, url:checks_path, local: true do |f| %>
+      <div class='messages'>
+        <h1 class='good-morning'>
+          おはよう！
+        <h2 class='check-content'>
+         
+          <%#= f.collection_select(:attendance, Attendance.all, :id, :name, {}, {class:"attendance-box", id:"attendance"}) %>
+          わたしは、<br>
+          (<%= f.collection_select(:number, Number.all, :id, :name, {}, {class:"number-box", id:"number"}) %>
+          番さんは、)<br>
+          学校に来たよ！
+      </div>
+
+      <div class='form-button'>
+        <%= f.submit "とうろくボタン" ,class:"sell-btn" %>
+      </div>
+    <% end %>
   </div>
-  
+
+  <%# 先生からのコメントの表示 %>
+  <div class='comment'>
+    先生からのお知らせ
+    <%#= link_to comment_path(comment) do %>
+  </div>
+
 </div>
