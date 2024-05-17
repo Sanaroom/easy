@@ -1,0 +1,29 @@
+
+
+
+.main{
+  height: 530px;
+  width: 1500px;  
+  background-color: yellow;
+  position: relative;
+}
+
+.messages{
+  position: absolute;
+  left: 200px;
+  height: 500px;
+  width: 500px;
+  text-align:center;
+ 
+}
+
+.good-morning{
+  text-align: left;
+  font-size: 60px;
+  
+}
+
+.check-content{
+  font-size: 40px;
+  text-align:center;
+}
