@@ -18,7 +18,7 @@
 }
 
 .number-box{
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .comment{
@@ -39,6 +39,11 @@
   text-align:center;
 }
 
+.attendance-box{
+  font-size: 40px;
+}
+
 .sell-btn{
   font-size: 30px;
 }
+

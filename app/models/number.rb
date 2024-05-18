@@ -15,5 +15,5 @@ class Number < ActiveHash::Base
   ]
 
   include ActiveHash::Associations
-  has_many :checks
+  belongs_to :check
   end
