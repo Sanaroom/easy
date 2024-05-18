@@ -16,7 +16,9 @@ test:
   username: root
   password:
   host: localhost
+
   database: easy_test
+
 
 production:
   <<: *default

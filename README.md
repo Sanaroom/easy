@@ -1,24 +1,56 @@
-# README
+## checks テーブル
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| number             | integer | null: false |
+| attendance         | integer | null: false |
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Association
+  belongs_to:sheet
+  belongs_to:user
+  belongs_to:comment
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+## sheets テーブル
+| Column           | Type      | Options     |
+| ---------------- | --------- | ----------- |
+| number           | references| null: false, foreign_key: true |
+| attendance       | references| null: false, foreign_key: true |
+| homework         | integer   | null: false |
 
-* Configuration
+Association
+  belongs_to:check
+  belongs_to:user
+  belongs_to:comment
 
-* Database creation
+## users テーブル
+| Column              | Type      | Options     |
+| ------------------- | --------- | ----------- |
+| email               | string    | null: false, unique: true |
+| encrypted_password  | string    | null: false |
+| grade               | integer   | null: false |
+| class               | integer   | null: false |
+| name                | string    | null: false |
 
-* Database initialization
+Association
+  belongs_to:check
+  belongs_to:sheet
+  belongs_to:comment
 
-* How to run the test suite
+Association
 
-* Services (job queues, cache servers, search engines, etc.)
+## comments テーブル
+| Column    | Type       | Options     |
+| --------- | ---------- | ----------- |
+| comment   | text       | null: false |
+| event     | integer    | null: false |
+| user      | references | null: false, foreign_key: true |
 
-* Deployment instructions
+Association
+  belongs_to:check
+  belongs_to:sheet
+  belongs_to:user
+  
 
-* ...
+
+ 
