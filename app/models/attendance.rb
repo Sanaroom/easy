@@ -9,5 +9,5 @@ class Attendance < ActiveHash::Base
   ]
 
   include ActiveHash::Associations
-  belongs_to :check
+  has_many :checks
   end

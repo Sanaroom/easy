@@ -17,7 +17,7 @@ class ChecksController < ApplicationController
   private
 
   def check_params
-    params.require(:check).permit(:number,:attendance)
+    params.require(:check).permit(:number_id,:attendance_id)
   end
 
 

@@ -12,8 +12,8 @@
 
 ActiveRecord::Schema[7.0].define(version: 2024_05_17_050648) do
   create_table "checks", charset: "utf8", force: :cascade do |t|
-    t.integer "number", null: false
-    t.integer "attendance", null: false
+    t.integer "number_id", null: false
+    t.integer "attendance_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
