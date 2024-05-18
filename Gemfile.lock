@@ -46,6 +46,8 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_hash (3.3.1)
+      activesupport (>= 5.0.0)
     activejob (7.0.8.1)
       activesupport (= 7.0.8.1)
       globalid (>= 0.3.6)
@@ -132,15 +134,11 @@ GEM
     nokogiri (1.16.5-x86_64-linux)
       racc (~> 1.4)
 
-
-
-
     pg (1.5.6)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
     pry-rails (0.3.9)
-     
 
 
     psych (5.1.2)
@@ -233,6 +231,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  active_hash
   bootsnap
   capybara
   debug
@@ -240,12 +239,8 @@ DEPENDENCIES
   jbuilder
   mysql2 (~> 0.5)
 
-
-
-
   pg
   pry-rails
-
 
 
   puma (~> 5.0)
