@@ -20,11 +20,6 @@ test:
   database: easy_test
 
 
-
-
-
-
-
 production:
   <<: *default
   adapter: postgresql
