@@ -134,12 +134,14 @@ GEM
 
 
 
+
     pg (1.5.6)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
     pry-rails (0.3.9)
-      pry (>= 0.10.4)
+     
+
 
     psych (5.1.2)
       stringio
@@ -239,8 +241,11 @@ DEPENDENCIES
   mysql2 (~> 0.5)
 
 
+
+
   pg
   pry-rails
+
 
 
   puma (~> 5.0)
